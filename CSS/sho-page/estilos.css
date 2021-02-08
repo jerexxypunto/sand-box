@@ -1,0 +1,63 @@
+*{
+	padding: 0;
+	margin:0;
+}
+
+/*cabezera*/
+
+header{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	text-align: center;
+	background: #E8ACD5
+}
+
+header div{
+	background:red;
+	font-size: 20px;
+	padding:1%;
+	margin:1%;
+}
+
+#Logo{flex:1 1 auto;}
+#menu{flex: 1 1 auto;}
+#social{flex: 1 1 auto;}
+/*fin de cabezera*/
+
+/*articulos*/
+
+.container{
+	display: grid;
+	height: 100vh;
+}
+
+.article{
+	background: #8BACFF;
+	margin:1%;
+	text-align: center;
+	padding: 1%;
+	display: flex;
+}
+
+.box{
+	background:#3B8433;
+	padding: 1%;
+	margin-top: 1%;
+	flex:2 1 80%;
+}
+.img{
+	background: #fff ;
+	padding: 1%;
+	margin:1%;
+	flex:1 1 30%;
+	align-items: center;
+}
+
+.box .text_content{
+	background: brown;
+}
+
+.box .boton{
+	background:yellow;
+}

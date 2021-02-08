@@ -1,0 +1,15 @@
+.padre{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:10px; 
+}
+.hijo{
+	background:#82CEBD;
+	text-align: center;
+	color:white;
+	padding: 10px;
+
+}
+.it1{
+	grid-row: 1/3;
+}

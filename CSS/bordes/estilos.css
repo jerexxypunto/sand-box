@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+}
+body .container {
+  margin: 0 5%;
+  height: 90%;
+}
+body .container .boton {
+  background-color: #499100;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: max-content;
+  padding: 1%;
+}
+body .container .boton a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body .container .caja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-flow: column wrap;
+  color: #62c400;
+}
+body .container .caja .bo {
+  position: relative;
+  display: flex;
+}
+body .container .caja .bo #i1, body .container .caja .bo #i2, body .container .caja .bo #i3 {
+  background-color: #62c400;
+  width: 15px;
+  height: 15px;
+  margin: 5px 5px 0 5px;
+  border-radius: 50%;
+}
+body .container .caja .bo::after {
+  content: "";
+  width: 71px;
+  height: 21px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  right: 0;
+  animation: carcte 3s linear infinite;
+}
+body .container .caja .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 10px solid #e6e6e6;
+  border-right: 10px groove #62c400;
+  border-bottom: 10px groove #62c400;
+  animation: giro 1s linear infinite;
+}
+
+@keyframes giro {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes carcte {
+  0% {
+    width: 100px;
+  }
+  22% {
+    width: 71px;
+  }
+  33% {
+    width: 51px;
+  }
+  66% {
+    width: 28px;
+  }
+  90% {
+    width: 0px;
+  }
+  100% {
+    width: 0px;
+  }
+}
