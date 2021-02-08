@@ -27,6 +27,10 @@ img {
 
 :root {
   --colorVerde:#9c0;
+  --codeBackground:#0f202e;
+  --codeColor:#c76a00;
+  --codeLlaves:#f8f400;
+  --codeFont:monospace;
 }
 
 .navbar {
@@ -54,7 +58,6 @@ img {
 }
 .navbar .navbar-bar .nav-link {
   color: white;
-  padding: 6% 10%;
   transition: all 0.5s;
   white-space: nowrap;
 }
@@ -143,6 +146,67 @@ img {
 }
 .cluster .bloque:hover a {
   color: #9c0;
+}
+
+.container_code {
+  width: 95%;
+  margin: 10px auto;
+  overflow: auto;
+}
+.container_code header {
+  background-color: var(--codeColor);
+  color: #fff;
+  display: flex;
+  padding: 5px;
+}
+.container_code header .textohead {
+  width: calc(100% - 100px);
+  text-align: center;
+}
+.container_code header .circulos {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.container_code header .circulos .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.container_code header .circulos .circle.green {
+  background-color: green;
+}
+.container_code header .circulos .circle.yellow {
+  background-color: yellow;
+}
+.container_code header .circulos .circle.red {
+  background-color: red;
+}
+
+.codeBox {
+  color: var(--codeColor);
+  background-color: var(--codeBackground);
+  font-size: 18px;
+  padding: 0 10px;
+}
+.codeBox header {
+  width: 100%;
+}
+.codeBox code {
+  font-family: var(--codeFont) !important;
+}
+.codeBox span {
+  margin: 0 5px;
+}
+.codeBox span.code_open {
+  color: var(--codeLlaves);
+  padding-right: 3px;
+  margin-right: 0;
+}
+.codeBox span.code_close {
+  color: var(--codeLlaves);
+  padding-left: 3px;
+  margin-left: 0;
 }
 
 .contenedor {
